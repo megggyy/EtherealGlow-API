@@ -39,6 +39,7 @@ function authJwt() {
                 `${api}/users/register`,
                 `${api}/users/usersPerMonth`,
                 `${api}/users/wishlist`,
+                `${api}/users/wishlist/productId/:id`,
             ]
         })
 }

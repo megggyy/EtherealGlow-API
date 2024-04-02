@@ -275,7 +275,7 @@ exports.deleteWish = async (req, res, next) => {
   const productId = req.params.id;
 
   const user = await User.findOneAndUpdate(
-    { _id: req.user.id },
+    { _id: req.params.id },
     { $pull: { wishlist: { _id: productId } } },
     { new: true }
   );
